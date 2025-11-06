@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropical Villas – Uluwatu</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-family: 'Georgia','Garamond',serif; }
+    body { background: #f3f2ee; color: #333; }
+
+    .page {
+      width: 80%; max-width: 950px; margin: 40px auto; background: white;
+      padding: 40px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      height: 60vh;
+      background: url('https://bali-home-immo.com/images/properties/off-plan-2-bedrooms-villa-for-sale-leasehold-in-uluwatu-rf4167zRgZyImP00sPSmlnpsVu1716452447.jpg') center/cover no-repeat;
+      border-radius: 18px; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
+      color: white; padding: 20px; margin-bottom: 40px;
+    }
+    .hero h1 { font-size: 3.2rem; text-shadow: 0 4px 12px rgba(0,0,0,0.7); }
+    .hero p { margin-top: 10px; font-size: 1.3rem; }
+
+    section { margin-bottom: 60px; }
+    h2 { font-size: 2.2rem; margin-bottom: 20px; color: #146b54;
+         text-transform: uppercase; letter-spacing: 2px; }
+
+    /* --- VILLA CARD --- */
+    .villa-card {
+      background: #fafafa; padding: 25px; border-radius: 14px;
+      border: 1px solid #e0ded9; margin-bottom: 40px;
+    }
+
+    /* --- FADE IMAGE SCROLLER --- */
+    .gallery-container {
+      position: relative; width: 100%; height: 260px;
+      border-radius: 14px; overflow: hidden; margin-bottom: 15px;
+    }
+    .fade-slide {
+      position: absolute; width: 100%; height: 100%; object-fit: cover;
+      opacity: 0; transition: opacity 0.8s ease-in-out;
+    }
+    .fade-slide.active { opacity: 1; }
+
+    .arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(0,0,0,0.5); color: white;
+      padding: 10px 14px; cursor: pointer;
+      border-radius: 50%; font-size: 22px;
+      user-select: none; z-index: 4;
+    }
+    .arrow.left { left: 10px; }
+    .arrow.right { right: 10px; }
+    .arrow:hover { background: rgba(0,0,0,0.8); }
+
+    /* ROI */
+    .roi-wrapper {
+      display: grid; grid-template-columns: repeat(2,1fr);
+      gap: 20px; margin-top: 20px;
+    }
+
+    .roi-block {
+      background: #fafafa; padding: 20px; border-radius: 12px;
+      border: 1px solid #e0ded9; text-align: center; font-weight: bold;
+    }
+
+    .btn,.enquire-btn {
+      padding: 12px 22px; background: #146b54; color: white;
+      border-radius: 8px; text-decoration: none; font-weight: bold;
+      display: inline-block; margin-top: 10px;
+    }
+
+    .footer {
+      text-align: center; padding: 30px 0; font-weight: bold;
+      font-style: italic; background: #f3f2ee; margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Luxury Tropical Villas in Uluwatu</h1>
+    <p>Leasehold – Off‑plan – Modern tropical living</p>
+    <a href="#options" class="btn">Explore Villas</a>
+  </div>
+
+  <section id="options">
+    <h2>Villa Options</h2>
+
+    <!-- OPTION A -->
+    <div class="villa-card">
+      <div class="gallery-container" data-gallery="villaA">
+        <img class="fade-slide active" src="https://bali-home-immo.com/images/properties/off-plan-2-bedrooms-villa-for-sale-leasehold-in-uluwatu-rf4167pNRpGWAJrQKtamxKltJI1716452571.jpg" alt="Villa A - 1" />
+        <img class="fade-slide" src="https://bali-home-immo.com/images/properties/off-plan-2-bedrooms-villa-for-sale-leasehold-in-uluwatu-rf4167zRgZyImP00sPSmlnpsVu1716452447.jpg" alt="Villa A - 2" />
+        <img class="fade-slide" src="houseout.jpeg" />
+        <img class="fade-slide" src="dining.jpeg" />
+        <div class="arrow left" data-dir="left">‹</div>
+        <div class="arrow right" data-dir="right">›</div>
+      </div>
+      <h3>2 Bedroom Villa — Unit A</h3>
+      <ul>
+        <li>Leasehold: 25 years</li>
+        <li>Completion: December 2025</li>
+        <li>Land 132m² • Building 163m² — USD 279,000</li>
+      </ul>
+      <a class="enquire-btn" href="#contact">Enquire</a>
+    </div>
+
+    <!-- OPTION B -->
+    <div class="villa-card">
+      <div class="gallery-container" data-gallery="villaB">
+        <img class="fade-slide active" src="https://bali-home-immo.com/images/properties/off-plan-2-bedrooms-villa-for-sale-leasehold-in-uluwatu-rf4167dygyBAiiWTxGe1p3RI2Y1716452515.jpg" alt="Villa B - 1" />
+        <img class="fade-slide" src="https://bali-home-immo.com/images/properties/off-plan-2-bedrooms-villa-for-sale-leasehold-in-uluwatu-rf4167Unj0ZTUU1x3bMA4BDpKY1716452499.jpg" alt="Villa B - 2" />
+        <img class="fade-slide" src="grill.jpeg">
+        <img class="fade-slide" src="dining2.jpeg">
+        <div class="arrow left" data-dir="left">‹</div>
+        <div class="arrow right" data-dir="right">›</div>
+      </div>
+      <h3>2 Bedroom Villa — Unit B</h3>
+      <ul>
+        <li>Leasehold: 25 years</li>
+        <li>Completion: December 2025</li>
+        <li>Land 144m² • Building 163m² — USD 289,000</li>
+      </ul>
+      <a class="enquire-btn" href="#contact">Enquire</a>
+    </div>
+
+    <!-- OPTION 3BR -->
+    <div class="villa-card">
+      <div class="gallery-container" data-gallery="villaC">
+        <img class="fade-slide active" src="https://bali-home-immo.com/images/properties/off-plan-2-bedrooms-villa-for-sale-leasehold-in-uluwatu-rf4167Unj0ZTUU1x3bMA4BDpKY1716452499.jpg" alt="Villa C - 1" />
+        <img class="fade-slide" src="https://bali-home-immo.com/images/properties/off-plan-2-bedrooms-villa-for-sale-leasehold-in-uluwatu-rf4167dygyBAiiWTxGe1p3RI2Y1716452515.jpg" alt="Villa C - 2" />
+        <img class="fade-slide" src="houseout2.jpeg" />
+        <img class="fade-slide" src="oasis.jpeg" />
+        <div class="arrow left" data-dir="left">‹</div>
+        <div class="arrow right" data-dir="right">›</div>
+      </div>
+      <h3>Villa Option 2 — 3 Bedroom Villa</h3>
+      <ul>
+        <li>Leasehold: 25 years</li>
+        <li>Completion: December 2025</li>
+        <li>3BR • Land 202m² • Building 189m² — USD 379,000</li>
+      </ul>
+      <a class="enquire-btn" href="#contact">Enquire</a>
+    </div>
+  </section>
+
+  <section id="bingin" class="page">
+    <h2>Bingin Area Highlights</h2>
+    <ul>
+      <li>World‑class surf breaks</li>
+      <li>Stunning beaches & cliff views</li>
+      <li>Strong rental demand</li>
+      <li>Café culture & lifestyle hubs</li>
+    </ul>
+  </section>
+
+  <section id="roi">
+    <h2>ROI Statistics</h2>
+    <div class="roi-wrapper">
+      <div class="roi-block">Estimated ROI: 12% – 15% annually</div>
+      <div class="roi-block">Occupancy Rate: 80%</div>
+      <div class="roi-block">Daily Rate: USD 180 – 270</div>
+      <div class="roi-block">Break-even: 5–6 years</div>
+      <div class="roi-block">Daily Maintenance Costs: USD 35-40</div>
+      <div class="roi-block">Net Profit: USD 53, 619</div>
+      <p>Calculation based on 2BR villa*</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: nicholas.nathanael@gmail.com</p>
+    <p>WhatsApp: +62 815 1010 2102</p>
+  </section>
+
+  <script>
+    document.querySelectorAll('.gallery-container').forEach(gallery => {
+      const slides = gallery.querySelectorAll('.fade-slide');
+      let index = 0;
+
+      gallery.querySelector('.arrow.left').onclick = () => {
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+      };
+
+      gallery.querySelector('.arrow.right').onclick = () => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      };
+
+    });
+  </script>
+
+  <footer class="footer">
+    <p>© 2025 Tropical Villas Uluwatu — All Rights Reserved</p>
+    <p class="footer-text">All transactions are conducted in IDR.</p>
+    <p class="footer-text">Lease starts on contract signing.</p>
+    <p class="footer-text">Option to extend lease for 20 years (market rate).</p>
+  </footer>
+
+</body>
+</html>
